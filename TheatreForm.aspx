@@ -1,12 +1,14 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="TheatreForm.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+   
 
     <div>
         <h1>The Theatre Booking Company</h1> </div>
         <div>We are booking tickets from November 2017 (minimum 2 tickets per booking)</div>
         <div>
         <table class="nav-justified" style="width: 167%">
+            <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
             <tr>
                 <td style="width: 248px">Enter Date required:</td>
                 <td>
@@ -34,7 +36,6 @@
             <tr>
                 <td style="width: 248px">
                     <asp:Button ID="Button1" runat="server" Text="Submit" />
-                    <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
                 </td>
             </tr>
         </table>
